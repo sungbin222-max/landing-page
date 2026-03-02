@@ -18,8 +18,8 @@ const projects = [
   },
   {
     icon: "🗡️",
-    name: "Jun's Cave RPG",
-    description: "끝없이 깊어지는 동굴을 탐험하는 텍스트 RPG. 턴제 전투, 장비/스킬 성장, 스코어보드 경쟁.",
+    name: "Juns RPG",
+    description: "끝없이 깊어지는 던전을 탐험하는 텍스트 RPG. 턴제 전투, 장비/스킬 성장, 스코어보드 경쟁.",
     tags: ["Node.js", "MongoDB", "Express", "Docker"],
     github: "https://github.com/sungbin222-max/junscave",
     demo: "/junscave/"
