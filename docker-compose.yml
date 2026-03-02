@@ -4,4 +4,17 @@ services:
     container_name: landing-page
     ports:
       - "8080:80"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - daybrief
+    restart: unless-stopped
+
+  daybrief:
+    build: ../daybrief
+    container_name: daybrief-dashboard
+    volumes:
+      - ../daybrief/data/briefings:/data/briefings:ro
+    expose:
+      - "80"
     restart: unless-stopped

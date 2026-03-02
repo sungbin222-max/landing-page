@@ -1,14 +1,6 @@
 // ========== Project Data ==========
 const projects = [
   {
-    icon: "🤖",
-    name: "OpenClaw Bot",
-    description: "AI 에이전트 기반 텔레그램 봇. 메시지 자동 응답, 스케줄링, 브라우저 자동화 지원.",
-    tags: ["Node.js", "AI", "Telegram", "Docker"],
-    github: "https://github.com/sungbin222-max",
-    demo: null
-  },
-  {
     icon: "🌐",
     name: "Portfolio Landing",
     description: "Nginx + Docker로 구동되는 정적 포트폴리오 랜딩페이지. 반응형 다크 테마.",
@@ -17,36 +9,20 @@ const projects = [
     demo: null
   },
   {
-    icon: "📊",
-    name: "Data Dashboard",
-    description: "실시간 데이터 시각화 대시보드. REST API 연동 차트 및 통계 표시.",
-    tags: ["React", "Chart.js", "REST API"],
-    github: "#",
-    demo: "#"
+    icon: "📰",
+    name: "DayBrief",
+    description: "OpenClaw AI 에이전트 기반 데일리 브리핑 봇. 매일 아침 날씨/뉴스를 텔레그램으로 전송하고 웹 대시보드로 히스토리 조회.",
+    tags: ["OpenClaw", "AI Agent", "Telegram", "Docker"],
+    github: "https://github.com/sungbin222-max/daybrief",
+    demo: "/daybrief/"
   },
   {
-    icon: "🔧",
-    name: "CLI Toolkit",
-    description: "개발 생산성을 높이는 커맨드라인 도구 모음. 파일 관리, 배포 자동화.",
-    tags: ["Python", "CLI", "Automation"],
-    github: "#",
-    demo: null
-  },
-  {
-    icon: "🛒",
-    name: "Simple Store",
-    description: "미니멀한 이커머스 프로토타입. 상품 목록, 장바구니, 결제 플로우.",
-    tags: ["Next.js", "TypeScript", "Stripe"],
-    github: "#",
-    demo: "#"
-  },
-  {
-    icon: "💬",
-    name: "Chat Service",
-    description: "WebSocket 기반 실시간 채팅 서비스. 그룹 채팅 및 파일 공유 지원.",
-    tags: ["Node.js", "WebSocket", "Redis"],
-    github: "#",
-    demo: "#"
+    icon: "🗡️",
+    name: "Jun's Cave RPG",
+    description: "끝없이 깊어지는 동굴을 탐험하는 텍스트 RPG. 턴제 전투, 장비/스킬 성장, 스코어보드 경쟁.",
+    tags: ["Node.js", "MongoDB", "Express", "Docker"],
+    github: "https://github.com/sungbin222-max/junscave",
+    demo: "/junscave/"
   }
 ];
 
