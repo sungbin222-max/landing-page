@@ -10,8 +10,12 @@ services:
       - certbot-webroot:/var/www/certbot:ro
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    networks:
+      - default
+      - bitcoinauto-network
     depends_on:
       - daybrief
+      - bitcoinauto
     restart: unless-stopped
 
   certbot:
@@ -31,5 +35,19 @@ services:
       - "80"
     restart: unless-stopped
 
+  bitcoinauto:
+    build: ../bitcoinauto
+    container_name: bitcoinauto-dashboard
+    volumes:
+      - ../bitcoinauto/data:/data:ro
+    expose:
+      - "80"
+    restart: unless-stopped
+
 volumes:
   certbot-webroot:
+
+networks:
+  default:
+  bitcoinauto-network:
+    external: true

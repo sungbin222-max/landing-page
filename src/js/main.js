@@ -11,7 +11,7 @@ const projects = [
   {
     icon: "📰",
     name: "DayBrief",
-    description: "OpenClaw AI 에이전트 기반 데일리 브리핑 봇. 매일 아침 날씨/뉴스를 텔레그램으로 전송하고 웹 대시보드로 히스토리 조회.",
+    description: "OpenClaw AI 에이전트 기반 데일리 AI 브리핑 봇. 매일 아침 AI 에이전트 최신 뉴스, 유튜브 영상, 활용 팁을 텔레그램으로 전송하고 웹 대시보드로 히스토리 조회.",
     tags: ["OpenClaw", "AI Agent", "Telegram", "Docker"],
     github: "https://github.com/sungbin222-max/daybrief",
     demo: "/daybrief/"
