@@ -22,11 +22,11 @@ const projects = [
   },
   {
     icon: "📊",
-    name: "Coin Market Analyzer",
-    description: "암호화폐 시장 뉴스 수집 및 분석기. RSS 피드 기반 자동 수집, 시장 동향 분석, 스케줄링 파이프라인.",
-    tags: ["Python", "FastAPI", "SQLite", "Docker"],
-    github: "https://github.com/sungbin222-max/coinmarket",
-    demo: "/analyzer/",
+    name: "IT EDU",
+    description: "AI가 설계한 체계적인 커리큘럼과 맥락 인식 교육자료로 효율적으로 학습하세요.",
+    tags: ["Python", "FastAPI", "PostgreSQL", "Docker","Genspark + Claude Opus"],
+    github: "https://github.com/sungbin222-max/it-edu",
+    demo: "/itedu/",
     status: "live",
     accent: "#8b5cf6"
   },
