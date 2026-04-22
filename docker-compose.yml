@@ -3,15 +3,7 @@ services:
     build: .
     container_name: landing-page
     ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - /etc/letsencrypt:/etc/letsencrypt:ro
-      - certbot-webroot:/var/www/certbot:ro
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-    depends_on:
-      - daybrief
+      - "8080:80"
     restart: unless-stopped
 
   certbot:

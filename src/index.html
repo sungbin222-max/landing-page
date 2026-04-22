@@ -3,36 +3,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Projects</title>
+  <title>sungbin222 | Developer Portfolio — AI &amp; Web Projects</title>
+  <meta name="description" content="AI 에이전트, RPG 게임, 자동화 봇 등 창의적인 개발 프로젝트 포트폴리오. Docker, Node.js, Python 기반 풀스택 개발.">
+  <meta name="keywords" content="developer, portfolio, AI agent, RPG game, Docker, Node.js, Python, fullstack">
+  <meta property="og:title" content="sungbin222 | Developer Portfolio">
+  <meta property="og:description" content="AI 에이전트, RPG 게임, 자동화 봇 등 창의적인 개발 프로젝트 포트폴리오">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <header class="hero">
+  <!-- Header (Element 2) -->
+  <nav class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark">S</span>
+        <span class="logo-text">sungbin222</span>
+      </a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/sungbin222-max" target="_blank" rel="noopener" class="nav-cta">GitHub →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section (Elements 3-5) -->
+  <header class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
     <div class="hero-content">
-      <h1 class="hero-title">My Projects</h1>
-      <p class="hero-subtitle">개발 프로젝트 포트폴리오</p>
+      <div class="hero-badge anim-fade" style="--delay: 0ms">
+        <span class="badge-dot"></span>
+        AI &amp; Web Developer
+      </div>
+      <h1 class="hero-title">
+        <span class="anim-fade" style="--delay: 100ms">아이디어를</span>
+        <span class="anim-fade hero-accent" style="--delay: 200ms">현실로</span>
+        <span class="anim-fade" style="--delay: 300ms">만드는 개발자</span>
+      </h1>
+      <p class="hero-subtitle anim-fade" style="--delay: 400ms">
+        AI 에이전트, RPG 게임, 자동화 봇 — 다양한 기술로 재미있는 것들을 만듭니다
+      </p>
+      <div class="hero-cta-group anim-fade" style="--delay: 500ms">
+        <a href="#projects" class="btn-primary">프로젝트 보기</a>
+        <a href="https://github.com/sungbin222-max" target="_blank" rel="noopener" class="btn-secondary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+      <div class="hero-stats anim-fade" style="--delay: 600ms">
+        <div class="stat">
+          <span class="stat-number" data-count="4">0</span>
+          <span class="stat-label">프로젝트</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-count="9">0</span>
+          <span class="stat-label">기술 스택</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-count="24">0</span>
+          <span class="stat-label">시간 가동</span>
+        </div>
+      </div>
     </div>
     <div class="hero-scroll">
-      <span>&#8595;</span>
+      <div class="scroll-line"></div>
     </div>
   </header>
 
-  <!-- Projects Section -->
-  <main class="projects-section">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects-grid" id="projects-grid">
-      <!-- JS에서 동적 렌더링 -->
+  <!-- Projects Section (Elements 6-7) -->
+  <section class="projects-section" id="projects">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag scroll-reveal">PROJECTS</span>
+        <h2 class="section-title scroll-reveal">만든 것들</h2>
+        <p class="section-desc scroll-reveal">Docker 기반으로 운영 중인 실서비스 프로젝트들</p>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+        <!-- JS에서 동적 렌더링 -->
+      </div>
     </div>
-  </main>
+  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-links">
-      <a href="https://github.com/sungbin222-max" target="_blank" rel="noopener">GitHub</a>
+  <!-- Skills Section (Element 7 확장) -->
+  <section class="skills-section" id="skills">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag scroll-reveal">TECH STACK</span>
+        <h2 class="section-title scroll-reveal">기술 스택</h2>
+        <p class="section-desc scroll-reveal">주로 사용하는 기술들</p>
+      </div>
+      <div class="skills-grid" id="skills-grid">
+        <!-- JS에서 렌더링 -->
+      </div>
     </div>
-    <p class="footer-copy">&copy; 2026 sungbin222-max</p>
+  </section>
+
+  <!-- About / Social Proof (Element 8) -->
+  <section class="about-section" id="about">
+    <div class="section-container">
+      <div class="about-card scroll-reveal">
+        <div class="about-content">
+          <span class="section-tag">ABOUT ME</span>
+          <h2 class="about-title">안녕하세요, sungbin222 입니다</h2>
+          <p class="about-text">
+            재미있는 아이디어를 실제 동작하는 서비스로 만드는 것을 좋아합니다.
+            AI 에이전트, 게임 봇, 자동화 시스템 등 다양한 분야에서 실험하고 있으며,
+            모든 프로젝트는 Docker 컨테이너로 24시간 운영됩니다.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight">
+              <span class="highlight-icon">🐳</span>
+              <span>Docker로 모든 서비스 운영</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">🤖</span>
+              <span>AI 에이전트 &amp; 자동화</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">🎮</span>
+              <span>게임 개발 &amp; 봇 시스템</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA (Element 10) -->
+  <section class="cta-section">
+    <div class="cta-bg-glow"></div>
+    <div class="section-container">
+      <div class="cta-content scroll-reveal">
+        <h2 class="cta-title">함께 만들어 볼까요?</h2>
+        <p class="cta-desc">프로젝트에 관심이 있거나 협업을 원하시면 연락해주세요</p>
+        <div class="cta-buttons">
+          <a href="https://github.com/sungbin222-max" target="_blank" rel="noopener" class="btn-primary btn-lg">
+            GitHub 방문하기 →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Element 11) -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-mark">S</span>
+            <span class="logo-text">sungbin222</span>
+          </a>
+          <p class="footer-tagline">아이디어를 현실로 만드는 개발자</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-col">
+            <h4>프로젝트</h4>
+            <a href="/daybrief/">DayBrief</a>
+            <a href="/junscave/">Juns RPG</a>
+          </div>
+          <div class="footer-col">
+            <h4>링크</h4>
+            <a href="https://github.com/sungbin222-max" target="_blank" rel="noopener">GitHub</a>
+            <a href="#projects">Projects</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 sungbin222. All rights reserved.</p>
+        <p class="footer-built">Built with ❤ and Docker</p>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
