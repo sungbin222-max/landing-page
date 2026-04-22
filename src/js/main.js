@@ -25,7 +25,7 @@ const projects = [
     name: "IT EDU",
     description: "AI가 설계한 체계적인 커리큘럼과 맥락 인식 교육자료로 효율적으로 학습하세요.",
     tags: ["Python", "FastAPI", "PostgreSQL", "Docker","Genspark + Claude Opus"],
-    github: "https://github.com/sungbin222-max/it-edu",
+    github: "Ready Soon",
     demo: "/itedu/",
     status: "live",
     accent: "#8b5cf6"
